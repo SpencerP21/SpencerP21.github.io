@@ -11,7 +11,7 @@
     }else { // Else Statement Inputting Data Into The Database
         $stmt = $conn->prepare("insert into registration(firstName, lastName, dateOfBirth, password)
             values(?, ?, ?, ?)");
-        $stmt->bind_param("ssss",$fName, $lName, $DoB, $pwd);
+        $stmt->bind_param("ssss",$fname, $lname, $DoB, $pwd);
         $stmt->execute();
         echo "Account Retrieved Successfully...";
         $stmt->close();
