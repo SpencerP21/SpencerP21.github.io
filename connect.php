@@ -1,4 +1,6 @@
 <?php
+    error_reporting(0); // Ignore All Error Messages
+
     $fname = $_POST['firstName']; // Transfers ID Data From HTML
     $lname = $_POST['lastName'];
     $DoB = $_POST['dateOfBirth'];
